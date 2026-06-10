@@ -151,7 +151,7 @@ END:VCARD`;
             fontSize: 'clamp(0.9rem, 3vw, 1.05rem)', color: 'var(--theme-secondary)', fontWeight: '600',
             textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '20px'
           }}>
-            {profile.designation || 'Smart NFC User'}
+            {profile.designation || 'Smart User'}
           </p>
 
           {profile.company_name && (

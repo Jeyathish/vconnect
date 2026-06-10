@@ -116,7 +116,7 @@ function LandingPage() {
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
               <Link to="/signup" className="btn btn-accent" style={{ padding: '14px 30px', borderRadius: '10px' }}>
-                Create Smart Card
+                Create Smart QR
               </Link>
               <a href="#pricing" className="btn btn-outline" style={{ padding: '14px 30px', borderRadius: '10px', color: 'white', borderColor: 'white' }}>
                 View Plans
@@ -141,7 +141,6 @@ function LandingPage() {
                 **** **** **** 8888
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', color: '#111827', fontWeight: '600', fontSize: 'clamp(0.7rem, 2vw, 0.85rem)' }}>
-                <span>SMART NFC CARD</span>
                 <span>VCONNECT.COM</span>
               </div>
             </div>
@@ -153,7 +152,7 @@ function LandingPage() {
       {/* About Section */}
       <section id="about" style={{ padding: '80px 0', background: 'rgba(0,0,0,0.15)' }}>
         <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
-          <h2 className="section-title" style={{ marginBottom: '20px' }}>About VConnect NFC Card</h2>
+          <h2 className="section-title" style={{ marginBottom: '20px' }}>About VConnect</h2>
           <p className="fluid-text" style={{ color: '#D7D7D7' }}>
             Traditional business cards are outdated, easily lost, and hard to update. VConnect digital business cards put all your professional details on a single tap. Using NFC technology, anyone can scan or tap your card to view your custom landing page, download contact cards, view portfolio links, and save your number instantly. No app required!
           </p>
@@ -195,7 +194,7 @@ function LandingPage() {
               background: 'rgba(255, 255, 255, 0.05)', padding: '40px 30px', borderRadius: '20px',
               border: '1px solid rgba(255, 255, 255, 0.1)', width: '100%', maxWidth: '340px', textAlign: 'center'
             }}>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Classic NFC</h3>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Classic</h3>
               <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#34D399', margin: '20px 0' }}>₹999 <span style={{ fontSize: '1rem', color: '#D7D7D7' }}>/ One-time</span></div>
               <ul style={{ listStyle: 'none', textAlign: 'left', marginBottom: '30px', color: '#D7D7D7', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <li><i className="fas fa-check" style={{ color: '#27ae60', marginRight: '8px' }}></i> 1 Matte Finish Smart Card</li>
@@ -228,7 +227,7 @@ function LandingPage() {
 
       {/* Footer */}
       <footer style={{ padding: '40px 0', borderTop: '1px solid rgba(255, 255, 255, 0.1)', textAlign: 'center', color: '#D7D7D7' }}>
-        <p>&copy; 2026 VConnect Smart Cards. All rights reserved.</p>
+        <p>&copy; 2026 VConnect. All rights reserved.</p>
       </footer>
 
     </div>
