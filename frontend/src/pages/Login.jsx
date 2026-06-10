@@ -44,8 +44,8 @@ function Login() {
       <div className="glass-card" style={{ maxWidth: '480px', animation: 'fadeInUp 0.6s ease-out' }}>
         
         <div style={{ textAlign: 'center', marginBottom: '35px' }}>
-          <h1 style={{ fontSize: '2.2rem', fontWeight: '800', color: '#F2C87E', marginBottom: '8px' }}>Welcome Back</h1>
-          <p style={{ color: '#666', fontSize: '0.95rem' }}>Sign in to access your VConnect dashboard</p>
+          <h1 style={{ fontSize: '2.2rem', fontWeight: '800', color: 'var(--secondary-color)', marginBottom: '8px' }}>Welcome Back</h1>
+          <p style={{ color: 'var(--text-light)', fontSize: '0.95rem' }}>Sign in to access your VConnect dashboard</p>
         </div>
 
         {error && (
@@ -62,7 +62,7 @@ function Login() {
           <div className="form-group">
             <label htmlFor="mobile">Mobile Number</label>
             <div style={{ position: 'relative' }}>
-              <i className="fas fa-mobile-alt" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: '#203A5F' }}></i>
+              <i className="fas fa-mobile-alt" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--secondary-color)' }}></i>
               <input 
                 type="text" 
                 id="mobile" 
@@ -80,7 +80,7 @@ function Login() {
           <div className="form-group">
             <label htmlFor="password">Password</label>
             <div style={{ position: 'relative' }}>
-              <i className="fas fa-lock" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: '#203A5F' }}></i>
+              <i className="fas fa-lock" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--secondary-color)' }}></i>
               <input 
                 type="password" 
                 id="password" 
@@ -93,7 +93,7 @@ function Login() {
               />
             </div>
             <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '8px' }}>
-              <Link to="/forgot-password" style={{ color: '#F2C87E', fontSize: '0.85rem', textDecoration: 'none' }}>Forgot Password?</Link>
+              <Link to="/forgot-password" style={{ color: 'var(--highlight-color)', fontSize: '0.85rem', textDecoration: 'none' }}>Forgot Password?</Link>
             </div>
           </div>
 
@@ -108,8 +108,8 @@ function Login() {
         </form>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '30px', fontSize: '0.9rem' }}>
-          <span style={{ color: '#666' }}>Don't have an account?</span>
-          <Link to="/signup" style={{ color: '#D4A047', fontWeight: 'bold', textDecoration: 'none' }}>Create Account</Link>
+          <span style={{ color: 'var(--text-light)' }}>Don't have an account?</span>
+          <Link to="/signup" style={{ color: 'var(--secondary-color)', fontWeight: 'bold', textDecoration: 'none' }}>Create Account</Link>
         </div>
 
       </div>

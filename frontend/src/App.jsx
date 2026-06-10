@@ -19,7 +19,7 @@ const RequireAuth = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
   if (loading) {
     return (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#152642' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#111827' }}>
         <div className="loader-spinner"></div>
       </div>
     );
@@ -34,7 +34,7 @@ const RequireAdmin = ({ children }) => {
   const { admin, loading } = useContext(AuthContext);
   if (loading) {
     return (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#152642' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#111827' }}>
         <div className="loader-spinner"></div>
       </div>
     );

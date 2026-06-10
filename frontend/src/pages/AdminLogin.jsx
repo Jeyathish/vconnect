@@ -39,8 +39,8 @@ function AdminLogin() {
       <div className="glass-card" style={{ maxWidth: '440px', animation: 'fadeInUp 0.6s ease-out' }}>
         
         <div style={{ textAlign: 'center', marginBottom: '35px' }}>
-          <h1 style={{ fontSize: '2.2rem', fontWeight: '800', color: '#F2C87E', marginBottom: '8px' }}>Admin Portal</h1>
-          <p style={{ color: '#666', fontSize: '0.95rem' }}>Log in to access your VConnect admin panel</p>
+          <h1 style={{ fontSize: '2.2rem', fontWeight: '800', color: 'var(--secondary-color)', marginBottom: '8px' }}>Admin Portal</h1>
+          <p style={{ color: 'var(--text-light)', fontSize: '0.95rem' }}>Log in to access your VConnect admin panel</p>
         </div>
 
         {error && (
@@ -57,7 +57,7 @@ function AdminLogin() {
           <div className="form-group">
             <label htmlFor="username">Username</label>
             <div style={{ position: 'relative' }}>
-              <i className="fas fa-user-shield" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: '#203A5F' }}></i>
+              <i className="fas fa-user-shield" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--secondary-color)' }}></i>
               <input 
                 type="text" 
                 id="username" 
@@ -74,7 +74,7 @@ function AdminLogin() {
           <div className="form-group">
             <label htmlFor="password">Password</label>
             <div style={{ position: 'relative' }}>
-              <i className="fas fa-lock" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: '#203A5F' }}></i>
+              <i className="fas fa-lock" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--secondary-color)' }}></i>
               <input 
                 type="password" 
                 id="password" 

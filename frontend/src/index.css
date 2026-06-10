@@ -166,54 +166,50 @@ body {
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
 }
 
-/* Card Themes Redesigned (Premium Dark & Custom Accents) */
-.profile-theme {
-  --theme-primary: #111827;
-  --theme-secondary: #10B981;
-  --theme-accent: #064E3B;
-  --theme-gradient: linear-gradient(135deg, #064E3B, #111827);
+/* Profile Themes Redesigned (Premium Dark & Custom Accents) */
+[class^="theme-"], [class*=" theme-"] {
+  --theme-bg: #1F2937;
+  --theme-text-primary: #FFFFFF;
+  --theme-text-secondary: #9CA3AF;
+  --theme-card-border: #374151;
+  --theme-item-bg: rgba(17, 24, 39, 0.65);
+  --theme-item-border: #374151;
 }
 
 .theme-1 {
-  --theme-primary: #111827;
-  --theme-secondary: #3B82F6;
-  --theme-accent: #1E3A8A;
-  --theme-gradient: linear-gradient(135deg, #1E3A8A, #111827);
+  --theme-accent: #3B82F6; /* Blue */
+  --theme-accent-bg: rgba(59, 130, 246, 0.15);
+  --theme-gradient: linear-gradient(135deg, #3B82F6, #1D4ED8);
 }
 
 .theme-2 {
-  --theme-primary: #111827;
-  --theme-secondary: #10B981;
-  --theme-accent: #064E3B;
-  --theme-gradient: linear-gradient(135deg, #064E3B, #111827);
+  --theme-accent: #10B981; /* Emerald */
+  --theme-accent-bg: rgba(16, 185, 129, 0.15);
+  --theme-gradient: linear-gradient(135deg, #10B981, #047857);
 }
 
 .theme-3 {
-  --theme-primary: #111827;
-  --theme-secondary: #34D399;
-  --theme-accent: #047857;
-  --theme-gradient: linear-gradient(135deg, #047857, #111827);
+  --theme-accent: #34D399; /* Mint */
+  --theme-accent-bg: rgba(52, 211, 153, 0.15);
+  --theme-gradient: linear-gradient(135deg, #34D399, #059669);
 }
 
 .theme-4 {
-  --theme-primary: #111827;
-  --theme-secondary: #9CA3AF;
-  --theme-accent: #374151;
-  --theme-gradient: linear-gradient(135deg, #374151, #111827);
+  --theme-accent: #9CA3AF; /* Silver */
+  --theme-accent-bg: rgba(156, 163, 175, 0.15);
+  --theme-gradient: linear-gradient(135deg, #9CA3AF, #4B5563);
 }
 
 .theme-5 {
-  --theme-primary: #111827;
-  --theme-secondary: #0EA5E9;
-  --theme-accent: #0C4A6E;
-  --theme-gradient: linear-gradient(135deg, #0C4A6E, #111827);
+  --theme-accent: #0EA5E9; /* Sky */
+  --theme-accent-bg: rgba(14, 165, 233, 0.15);
+  --theme-gradient: linear-gradient(135deg, #0EA5E9, #0369A1);
 }
 
 .theme-6 {
-  --theme-primary: #111827;
-  --theme-secondary: #EF4444;
-  --theme-accent: #7F1D1D;
-  --theme-gradient: linear-gradient(135deg, #7F1D1D, #111827);
+  --theme-accent: #EF4444; /* Red */
+  --theme-accent-bg: rgba(239, 68, 68, 0.15);
+  --theme-gradient: linear-gradient(135deg, #EF4444, #B91C1C);
 }
 
 /* Toast System */
@@ -391,10 +387,10 @@ img {
   position: sticky;
   top: 0;
   width: 100%;
-  background: rgba(21, 38, 66, 0.85);
+  background: rgba(17, 24, 39, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid #374151;
   padding: 18px 0;
   z-index: 1000;
   transition: var(--transition);
@@ -488,7 +484,8 @@ img {
     right: 0;
     width: 280px;
     height: 100vh;
-    background: #152642;
+    background: #111827;
+    border-left: 1px solid #374151;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
@@ -590,4 +587,34 @@ img {
   .glass-card {
     padding: 25px 20px !important;
   }
+}
+
+/* Scroll Animations Utilities */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Interactive Hover Lift & Glow */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.2) !important;
+  border-color: var(--secondary-color) !important;
 }
