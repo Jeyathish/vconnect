@@ -125,7 +125,7 @@ function LandingPage() {
           </div>
 
           {/* 3D NFC Card Showcase */}
-          <div style={{ flex: '1', minWidth: '280px', display: 'flex', justifyContent: 'center', width: '100%' }}>
+          {/* <div style={{ flex: '1', minWidth: '280px', display: 'flex', justifyContent: 'center', width: '100%' }}>
             <div style={{
               width: '100%', maxWidth: '350px', aspectRatio: '1.6 / 1',
               background: 'linear-gradient(135deg, #10B981 0%, #34D399 100%)',
@@ -144,7 +144,7 @@ function LandingPage() {
                 <span>VCONNECT.COM</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </section>
